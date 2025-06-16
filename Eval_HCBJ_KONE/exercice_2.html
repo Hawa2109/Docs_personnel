@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rattrapage Eval front</title>
+    <!-- Lien bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Lien de mon CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-element">
+                    <a href="exercice_1.html">Exercice 1</a>
+                </li>
+                <li class="nav-element">
+                    <a href="exercice_2.html">Exercice 2</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="">
+        <div class="container">
+            <div class="row mt-5 gap-5">
+                <div class="col-md-6 border border-3">
+                    <h2 class="text-center text-primary text-uppercase mt-5">Formulaire</h2>
+                    <form action="" method="" class="p-5">
+                        <div class="d-none mt-2" id="formError">Tous les champs sont requis</div>
+
+                        <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label mb-3 mb-3 fw-bold text-black fs-5">Nom</label>
+                                    <input type="text" class="form-control fs-5" id="lastName" name="lastName">
+                                    <p class="d-none mt-2" id="nomError">Le champ nom n'est pas valide</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label mb-3 mb-3 fw-bold text-black fs-5">Prenom</label>
+                                    <input type="text" class="form-control fs-5" id="firstName" name="firstName">
+                                    <p class="d-none mt-2" id="prenomError">Le champ prénom n'est pas valide</p>
+
+                                </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label mb-3 mb-3 fw-bold text-black fs-5">Email</label>
+                            <input type="text" class="form-control fs-5" id="email" name="email" placeholder="aaaa@gmail.com">
+                            <p class="d-none mt-2 " id="emailError">Le champ email n'est pas valide</p>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label mb-3 mb-3 fw-bold text-black fs-5">Mot de passe</label>
+                            <input type="password" class="form-control fs-5" id="password" name="password">
+                            <p class="d-none mt-2" id="mdpError">Le champ mot de passe n'est pas valide</p>
+                        </div>
+                        <div class=" border-bottom p-3">
+
+                        </div>
+                    
+                        <button type="submit" class="btn btn-primary w-100 mt-4">Envoyer</button>
+
+                    </form>
+                </div>
+                <div class="col-md-5 border border-3">
+                    <h2 class="text-center text-primary text-uppercase mt-5">Données</h2>
+                    <ul class="p-5" id="list">
+                        <li class="fw-bold p-2" id="nomAffiche">Nom :</li>
+                        <li class="fw-bold p-2" id="prenomAffiche">Prénom :</li>
+                        <li class="fw-bold p-2" id="emailAffiche">Email :</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- <p class="text-center">&copy; HK - Droits réservés</p> -->
+    </footer>
+
+
+
+        <!-- Lien bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <!-- Lien de mon JS -->
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

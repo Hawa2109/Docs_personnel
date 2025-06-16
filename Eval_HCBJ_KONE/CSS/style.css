@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Pour la navigation */
+.navigation{
+    background-color: rgb(27, 36, 36);
+    padding: 15px;
+}
+.navigation ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul li{
+    margin: 0 20px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;  
+}
+/* Style du premier exercice */
+.conteneur{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 16px rgba(188, 185, 185, 0.5);
+    border-radius: 20px;
+}
+.conteneur-image{
+    text-align: center;
+}
+.conteneur-list{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+}
+.conteneur-list button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+ .conteneur-image img {
+    /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 100%; 
+    /* Maintient les proportions de l'image */
+    height: auto;
+}
+        
+.conteneur-list #vert{
+    background-color: rgb(156, 238, 148);
+}
+.conteneur-list #rose{
+    background-color: rgb(252,211,210);
+}
+.conteneur-list #jaune{
+    background-color: rgb(249, 226, 0);
+}
+.conteneur-list #bleu{
+    background-color: rgb(210, 213, 237);
+}
+.conteneur-list #marron{
+    background-color: rgb(147, 40, 42);
+}
+
+/******************************************* EXERCICE 2  *****************************************/
+/* style des messages d'erreur */
+.error {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(248, 186, 196);
+    border-radius: 10px;
+}
