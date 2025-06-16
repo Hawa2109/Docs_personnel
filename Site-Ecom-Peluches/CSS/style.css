@@ -1,0 +1,318 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Pour tout les images */
+img {
+  width: 100%;
+}
+/*  Pour les h2 */
+.section-titre {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.section-titre::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  display: block;
+  background: #be7937;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+/* Partie HEADER */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: #720a48;
+
+  h1 {
+    color: #fff;
+    transition: 0.3s ease;
+    font-family: "Merriweather", sans-serif;
+
+    &:hover {
+      letter-spacing: 1px;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-menu .nav-link {
+      padding: 10px 18px;
+      color: #fff;
+      font-size: 1.3em;
+      border-radius: 20px;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: #9e05606c;
+        letter-spacing: 1px;
+      }
+    }
+    .nav-icones i {
+      padding: 0 20px;
+      color: #fff;
+    }
+  }
+}
+/* Section accueil */
+.section-accueil {
+  min-height: 100vh;
+  background-color: #720a48;
+
+  .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: space-between;
+
+    .accueil-details {
+      margin-left: 15px;
+
+      .titre {
+        font-size: 2em;
+        color: #be7937;
+        font-family: "Merriweather", sans-serif;
+      }
+
+      .sous-titre {
+        font-size: 1.4em;
+        max-width: 70%;
+        margin: 24px 0 40px;
+        font-weight: 700;
+      }
+      .buttons {
+        margin: 20px 0;
+        /* border: 1px solid red; */
+        display: flex;
+        gap: 25px;
+
+        a {
+          text-decoration: none;
+          font: 1.2em "Merriweather", sans-serif;
+        }
+
+        .button {
+          padding: 10px 26px;
+          border: 2px solid transparent;
+          color: #720a48;
+          border-radius: 15px;
+          background: #92571f;
+          transition: 0.3s ease;
+        }
+
+        .button:hover,
+        .contact {
+          border-color: #fff;
+          color: #fff;
+          background: transparent;
+        }
+
+        .contact:hover {
+          color: #720a48;
+          border-color: #92571f;
+          background: #92571f;
+        }
+      }
+    }
+    .accueil-image-wrap {
+      max-width: 500px;
+      margin-left: 10px;
+      img{    /* Pour que l'image soit en noir et blanc quand on le survol */ 
+              filter: grayscale(0);
+              transition: all .3s ease-in-out;
+
+              &:hover{
+                filter: grayscale(1);
+                width: 100%;
+              }
+      }
+    }
+  }
+}
+
+/* Section a propos */
+.section-apropos {
+  padding: 120px 0;
+  background: rgba(254, 193, 202, 0.427);
+
+  .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+
+    .apropos-image-wrap {
+      .apropos-image {
+        margin-left: 25px;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .apropos-articles {
+      max-width: 50%;
+
+      .apropos-details li {
+        padding: 10px;
+      }
+      .apropos-titre {
+        padding: 0;
+      }
+
+      .texte {
+        line-height: 20px;
+        margin: 50px 0 30px;
+        text-align: center;
+        font-size: 1.2em;
+      }
+      .apropos-social-links {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+
+        .social-link {
+          color: #720a48;
+          font-size: 30px;
+          transition: 0.2s, font-size 0.3s ease;
+
+          &:hover {
+            color: #be7937;
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Section notre histoire  */
+.section-histoire {
+  background-color: #fadadd;
+
+  .banniere {
+    background: url(../images/Oursons-12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-attachment: fixed;
+  }
+
+  .section-titre {
+    padding: 15px;
+  }
+
+  .texte {
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    font-family: "Poppins", sans-serif;
+  }
+  img {
+    width: 300px;
+    padding: 15px;
+    display: flex;
+    margin: 0 auto;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+    &:hover {
+      width: 200px;
+      height: 200px;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* Sections Produits */
+.section-produits {
+  color: #720a48;
+  background-color: rgba(254, 193, 202, 0.427);
+  padding: 50px 0 100px;
+
+  .produits-content {
+    padding: 30px;
+    width: 90%;
+    margin: 0 auto;
+
+    .produits-list {
+      display: flex;
+      flex-wrap: wrap;
+      /* gap: 30px; */
+      align-items: center;
+      justify-content: space-between;
+
+      .produits-item {
+        gap: 35px;
+        padding: 25px;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30%;
+
+        /* width: calc(100% / 3 - 100px); */
+
+        .produit-image {
+          max-width: 100%;
+          height: 100%;
+          aspect-ratio: 1;
+          margin-bottom: 15px;
+          border-radius: 15%;
+          object-fit: cover;
+          cursor: pointer;
+          box-shadow: 15px 5px 5px rgba(226, 144, 215, 0.463);
+
+          transition: 0.6s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        .titre {
+          margin: 0;
+          font-size: 20px;
+          font-weight: bold;
+
+          .texte {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.col-1 {
+  width: 8.333333%;
+  padding: 25px;
+}
+.col-2 {
+  width: 16.6666%;
+  padding: 25px;
+}
+.col-3 {
+  width: 25%;
+  padding: 25px;
+}
+.col-4 {
+  width: 33.333333%;
+  padding: 25px;
+}
+.col-5 {
+  width: 41.6666666%;
+  padding: 25px;
+}
+.col-6 {
+  width: 50%;
+  /* padding: 25px; */
+}
+.col-7 {
+  width: 58.333333%;
+  padding: 25px;
+}
+.col-8 {
+  width: 66.666666%;
+  padding: 25px;
+}
+.col-9 {
+  width: 75%;
+  padding: 25px;
+}
+.col-10 {
+  width: 83.333333%;
+  padding: 25px;
+}
+.col-11 {
+  width: 91.666666%;
+  padding: 25px;
+}
+.col-12 {
+  width: 100%;
+  padding: 25px;
+}
+/*  La parties de la navbar */
+header nav li {
+  list-style-type: none;
+}
+/* pour le logo Macrea */
+nav div.logo {
+  font-size: 1.7em;
+  font-style: italic;
+  transition: 0.6s ease-in-out;
+}
+.logo:hover {
+  transform: scale(0.8);
+}
+/* Pour aligner ma navbar */
+nav a,
+.icone {
+  text-decoration: none;
+  color: rgb(133, 41, 75);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(243, 200, 177);
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 15px;
+  transition: 0.6s ease-in-out;
+}
+nav ul li:hover {
+  background-color: #f8b075;
+  transform: scale(1.05);
+  border-radius: 50px 0 50px 0;
+}
+
+nav .list {
+  display: flex;
+}
+nav .icone {
+  padding-top: 15px;
+}
+nav i {
+  padding: 10px;
+}
+/* Haeder */
+.col-6 {
+  width: 50%;
+}
+.col-6 img {
+  width: 100%;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 55px;
+}
+.row h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  color: #f7cb87;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.row p {
+  color: #f7cb87;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+}
+/* Centre le button */
+.row button {
+  display: block;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(241, 161, 193);
+}
+/* Premiére section FLEXBOX */
+section {
+  background-color: #d8a96b;
+}
+section h2 {
+  text-align: center;
+  color: #fff;
+  width: 30%;
+  margin: 0 auto;
+  font-size: 2.7em;
+}
+#produits_1 img {
+  width: 90%;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+#produits_1 img:hover {
+  transform: scale(1.05);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.box img {
+  border-radius: 5px;
+  box-shadow: 15px 5px 5px rgb(73, 47, 10);
+  cursor: pointer;
+}
+.box p {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px;
+}
+.box button {
+  background-color: #fff;
+  font-style: normal;
+  color: #f8b075;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+}
+/* Partie Banniere */
+#produits_2 img {
+  width: 90%;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+#produits_2 img:hover {
+  /* opacity: 0.5; */
+  transform: scale(1.05);
+}
+.banniere {
+  background: url(../images/Macaron6.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  position: relative;
+}
+.banniere::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.banniere h3 {
+  color: #fff;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 3em;
+  padding: 65px;
+  position: relative;
+  z-index: 2;
+}
+.banniere button {
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(241, 161, 193);
+  position: relative;
+  z-index: 2;
+}
+/* Deuxieme section de produits */
+#produits_2 {
+  background-color: rgb(123, 177, 173);
+  padding: 25px;
+}
+
+/* La div avec un titre et un paragraphe */
+.texte {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.texte h3 {
+  font-size: 3em;
+  color: #e8788a;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+}
+.texte p {
+  font-size: 1em;
+  font-weight: bold;
+  color: #2c0227;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+}
+/* SECTION CAROUSEL */
+#carousel {
+  background: url(../images/Macaron_petale.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Style du conteneur du carrousel */
+.carousel {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+.carousel-item {
+  border-radius: 35px;
+  padding: 25px;
+}
+
+/* Style de la piste qui contient les images */
+.carousel-track {
+  display: flex;
+  animation: slide 15s infinite;
+}
+
+/* Style pour chaque image */
+.carousel-item {
+  width: 50%;
+  object-fit: cover;
+}
+/* Animation pour le carrousel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animmation des buttons */
+button {
+  transition: 0.6s ease-in-out;
+}
+button:hover {
+  background-color: #eb318e;
+  color: #2c0227;
+  box-shadow: 5px 10px 8px 5px rgb(49, 1, 50);
+  /* border-radius: 20PX; */
+  border-radius: 50px 0 50px 0;
+}
+/* FOOTER */
+#footer_section {
+  background-color: rgb(239, 233, 186);
+}
+#footer_section h3 {
+  font-size: 2em;
+  text-align: center;
+  color: #a74d5c;
+  font-style: normal;
+  padding: 15px;
+  text-transform: uppercase;
+}
+#footer_section p a {
+  text-decoration: none;
+  color: #a74d5c;
+}
+#footer_section p {
+  font-size: 2.7em;
+  text-align: center;
+  font-weight: bold;
+}
+.flex img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 17px 4px 13px 11px rgb(225 194 158);
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+.flex img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  gap: 15px;
+}
+/********* FOOTER *********/
+footer {
+  background-color: #ed865d;
+}
+footer p {
+  font-size: 15px;
+}
+.icones_social {
+  margin: 20px 0;
+}
+.icones_social i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+footer img {
+  margin-top: 20px;
+  border: 1px solid #fff;
+  height: 70px;
+  cursor: pointer;
+}
+footer img:last-child {
+  margin-left: 10px;
+}
+footer .footer-icone {
+  padding: 15px;
+}
+footer .footer-icone p {
+  font-size: 15px;
+  font-weight: bold;
+}
+footer .footer-link h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  padding: 10px;
+}
+footer .footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-link ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.footer-link ul a {
+  font-size: 1.3em;
+  color: #621504;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: 0.5s;
+}
+footer .footer-link ul a:hover {
+  letter-spacing: 0.5px;
+}
+footer .info {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+footer .info p:last-child {
+  font-size: 15px;
+  color: #0d0c0c;
+  margin-top: 15px;
+}
+
+/******** MEDIA QUERY  ***********/
+/* Écrans larges (ordinateur de bureau) */
+body {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+  .row {
+    flex-direction: row-reverse;
+  }
+  .carousel-item {
+    width: 20%; /* Pour ajuster les éléments du carrousel */
+  }
+  .flex {
+    width: 90%;
+  }
+  .flex img {
+    width: 80%;
+  }
+}
+
+/* Tablettes (écrans moyens) */
+@media (min-width: 768.98px) and (max-width: 991.98px) {
+  .navbar .list ul {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .flex img {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .carousel-item {
+    width: 40%;
+  }
+  .texte h3 {
+    font-size: 2em;
+  }
+  .banniere h3 {
+    font-size: 2.2em;
+  }
+}
+
+/* Petits écrans (mobiles) */
+@media (max-width: 767.98px) {
+  .navbar .list ul {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-6,
+  .col-12 {
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5em;
+  }
+  .texte h3 {
+    font-size: 1.8em;
+  }
+  .banniere h3 {
+    font-size: 1.8em;
+  }
+  .flex img {
+    width: 80%;
+    margin: 5px 0;
+  }
+  .carousel-item {
+    width: 80%;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* trés petites écrans */
+@media screen and (max-width: 400px) {
+  .row,
+  .box,
+  .flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  img,
+  nav ul {
+    max-width: 100%;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 10px;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}
