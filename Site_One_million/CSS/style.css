@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation a:hover {
+  color: #fff !important;
+}
+.header-section {
+  background-image: url(../img/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* SECTION ACADEMY */
+.titre {
+  font-family: "Roboto Slab", serif;
+}
+.titre,
+span {
+  color: #e74c3c;
+}
+/* Trait sous les titres */
+.titre-underline {
+  position: relative;
+  display: block; /* Change inline-block to block */
+  margin-bottom: 1rem;
+  text-align: center; /* Center the title */
+}
+
+.titre-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.5rem;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 1px;
+  background-color: #e74c3c; /* Couleur du trait */
+}
+/* SECTION GET INVOLVED */
+.section-get-icones i {
+  font-size: 55px;
+  text-align: center;
+  align-items: center;
+}
+.section-get-icones {
+  background-color: rgb(71, 71, 71);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  border-radius: 50%;
+}
+.section-get a {
+  background-color: #fff;
+  color: #e74c3c;
+}
+.section-get a:hover {
+  color: #fff;
+  background-color: rgb(144, 144, 144);
+}
+/*************************************** DEUXIEME PAGE **************************************/
+.discover-section, .contact-section {
+  background-image: url(../img/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.discover-section i {
+  color: red;
+  font-size: 20px;
+}
+/* Sections des card */
+.carte {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+  line-height: 1.5;
+  cursor: pointer;
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+  transition: background 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carte-1:hover {
+  background-image: url("../img/team4.jpg");
+  color: white;
+}
+
+.carte-2:hover {
+  background-image: url("../img/team3.jpg");
+  color: white;
+}
+.carte-3:hover {
+  background-image: url("../img/team2.jpg");
+  color: white;
+}
+.carte-4:hover {
+  background-image: url("../img/team1.jpg");
+  color: white;
+}
+/* La section des paragraphes */
+.section-para a {
+  color: #e74c3c;
+}
+
+.last-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 50px;
+}
+/* classes js */
+/*  */
+.error {
+    width: 30%;
+    padding: 5px;
+    background-color: pink;
+    border-radius: 10px;
+}
+/* class */
+.invalid {
+  background-color: #f9616180;
+  /* padding: 0.75rem 1.5rem; */
+  border-radius: 0.3rem;
+}
+.valid {
+  /* background-color: #84d55580; */
+  background-color: #d4edda;
+}
+/* Medias querie INDEX */
+@media (max-width: 340px){
+  nav .logo {
+    width: 90px;
+  }
+
+  .header-section {
+  h1 {
+    font-size: 1.5em;
+  }
+  div {
+    p{
+      font-size: 1em;
+    }
+  }
+
+  /* .discover-section {
+    h1{
+      font-size: 1em;
+      padding: 0;
+      border: 2px solid red;
+    }
+    div {
+      border: 2px solid red;
+    }
+  } */
+
+
+  }
+  
+}
